@@ -1,0 +1,39 @@
+:root{--bg:#0d0d10;--bg2:#16161b;--line:#26262e;--fg:#ececf1;--muted:#9a9aa8;--acc:#e3262e;--acc2:#ff5a5f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+a{color:var(--acc2);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.top{border-bottom:1px solid var(--line);background:rgba(13,13,16,.92);position:sticky;top:0;z-index:5;backdrop-filter:blur(8px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:var(--fg);font-size:20px}
+.brand:hover{text-decoration:none}.brand img{border-radius:50%}.brand b{color:var(--acc)}
+.brand.small{font-size:16px}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{color:var(--muted);padding:6px 12px;border-radius:8px;font-size:15px}
+nav a:hover,nav a.on{color:var(--fg);background:var(--bg2);text-decoration:none}
+main{padding:40px 20px 60px}
+h1{font-size:40px;line-height:1.15;margin:0 0 12px}h1 b{color:var(--acc)}
+h2{font-size:24px;margin:48px 0 16px}h3{font-size:18px;margin:0 0 6px}
+p,li{color:#cfcfd8}.lead{font-size:19px;color:#dedee6}.muted{color:var(--muted);font-size:14px}
+.hero{display:flex;align-items:center;gap:36px;padding:24px 0 8px;flex-wrap:wrap}
+.hero-logo{border-radius:50%;box-shadow:0 0 0 4px var(--acc),0 18px 60px rgba(227,38,46,.35)}
+.hero>div{flex:1;min-width:260px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn{background:var(--acc);color:#fff;padding:11px 20px;border-radius:10px;font-weight:600}
+.btn:hover{background:var(--acc2);text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card p{margin:0;font-size:15px}.card p+p{margin-top:8px}
+.card.link{color:var(--fg);transition:border-color .15s}.card.link:hover{border-color:var(--acc);text-decoration:none}
+.steps{padding-left:22px}.steps li{margin-bottom:10px}
+.legal{max-width:760px}.legal h1{font-size:34px}.legal h2{font-size:20px;margin-top:32px}
+.bottom{border-top:1px solid var(--line);background:#0a0a0d;padding:36px 0 20px}
+.bottom .wrap{display:flex;gap:40px;flex-wrap:wrap}
+.fcol{display:flex;flex-direction:column;gap:6px;min-width:150px}
+.fcol h4{margin:0 0 4px;font-size:14px;color:var(--fg)}
+.fcol a{color:var(--muted);font-size:14px}.fcol p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.copy{margin-top:28px;color:var(--muted);font-size:13px;display:block}
+@media(max-width:600px){h1{font-size:32px}.hero{gap:20px}.hero-logo{width:120px;height:120px}}
+.bottom .wrap.copy{display:block}
